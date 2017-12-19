@@ -15,8 +15,8 @@ export default function Root({store, history}) {
         /* store is one single redux store avaliable to 'connect' for every descendant of provider */
         <Provider store={store}>
             <div>
-                /* can handle only one child element, you can use Switch component inside. 
-                Keep your app components isolated from router so you can use them on server(tests...) */
+                {/* can handle only one child element, you can use Switch component inside.
+                Keep your app components isolated from router so you can use them on server(tests...) */}
                 <ConnectedRouter history={history}>
                     <Route path="/" component={App}/>
                 </ConnectedRouter>
